@@ -12,10 +12,14 @@ It includes:
 
 emg_microexpression_project/
 ├── data/
-│   └── emg_dataset.csv               # Raw EMG data
+│   └── subject_01.csv
+        subject_02.csv
+        subject_03.csv
+        .
+        .
+        .
+        subject_15.csv
 │
-├── metadata/
-│   └── channel_mapping.csv           # EMG channel to muscle mapping
 │
 ├── arduino/
 │   └── emg_acquisition.ino           # Arduino sketch for serial EMG data
@@ -24,10 +28,7 @@ emg_microexpression_project/
 │   ├── data_collection.py            # Python script to collect and store EMG data
 │   ├── filters.py                    # Bandpass, notch, and rectification filters
 │   └── preprocessing_pipeline.py     # Preprocess raw EMG signals
-│
-├── notebooks/
-│   └── signal_processing_demo.ipynb  # Visualization of filtering steps
-│
+││
 ├── README.md                         # Project overview and instructions
 └── requirements.txt                  # Python dependencies
 
@@ -64,7 +65,7 @@ This will apply:
 
 The final dataset is structured for ML with columns like:
 
-- `Timestamp`, `Subject_ID`, `Emotion`, `Channel`, `Raw_Signal`, `Filtered_Signal`
+- 'Timestamp', 'emotion_label', 's1'....'s8', 'muscle_name'
 
 Feature Extraction:
 - Mean
