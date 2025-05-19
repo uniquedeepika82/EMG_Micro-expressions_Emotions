@@ -28,7 +28,9 @@ emg_microexpression_project/
 │   ├── data_collection.py            # Python script to collect and store EMG data
 │   ├── filters.py                    # Bandpass, notch, and rectification filters
 │   └── preprocessing_pipeline.py     # Preprocess raw EMG signals
-││
+│   └── preprocessing_pipeline.py     # Preprocess raw EMG signals
+│   └── machine_learning.py           # For Results
+│
 ├── README.md                         # Project overview and instructions
 └── requirements.txt                  # Python dependencies
 
